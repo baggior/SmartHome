@@ -1,0 +1,11 @@
+sitemap kita_state label="KITA STATE sitemap"
+{
+    Text item=kita_lastReadSuccess
+    Text item=kita_lastReadError
+
+    Default item=kita_switch
+    Default item=kita_mode
+
+    Default item=kita_b3
+    Default item=kita_b5
+}

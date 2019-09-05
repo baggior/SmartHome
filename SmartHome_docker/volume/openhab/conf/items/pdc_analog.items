@@ -1,0 +1,45 @@
+Number:Temperature kita_b1 "B1: subcooling temperature in HP mode [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d1:number"}
+Number:Temperature kita_b1_calc "B1: subcooling temperature in HP mode (calculated) [%.1f °C]" <temperature>
+DateTime kita_lastReadSuccess "Last successful read [%1$tA, %1$td/%1$tm/%1$tY %1$tH:%1$tM]s" {channel="modbus:data:pdckita:analog:d1:lastReadSuccess"}
+DateTime kita_lastReadError "Last erroring read [%1$tA, %1$td/%1$tm/%1$tY %1$tH:%1$tM]" {channel="modbus:data:pdckita:analog:d1:lastReadError"}
+
+
+Number:Temperature kita_b3 "B3: sanitary hot water puffer temperature [%.1f °C]" <temperature_hot> {channel="modbus:data:pdckita:analog:d3:number"}
+Number:Temperature kita_b4 "B4: inlet water temperature [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d4:number"}
+Number kita_b5 "B5: waterflow l/m if flowmeter fitted [%.1f l/m]" {channel="modbus:data:pdckita:analog:d5:number"}
+Number:Temperature kita_b7 "B7: outlet water temperature [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d7:number"}
+Number:Temperature kita_b8 "B8: external air temperature [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d8:number"}
+
+Number:Temperature kita_b9 "B9: compressor discharge temperature [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d9:number"}
+Number:Temperature kita_b10 "B10: compressor suction temperature [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d10:number"}
+
+Number:Temperature kita_b12c "Evaporator temperature from Low pressure conversion [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d13:number"}
+Number:Temperature kita_b11c "Condensing temperature from High pressure conversion [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d14:number"}
+
+Number:Temperature kita_superheating "Superheating [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d15:number"}
+// Number:Temperature kita_superheating_69 "Superheating2 [%.1f °C]" <temperature> {channel="modbus:data:pdckita:analog:d69:number"}
+
+// Number:Frequency kita_rps_model_limit "Max speed limited matching compressor model [%.1f rps]" <pump> {channel="modbus:data:pdckita:analog:d16:number"}
+Number:Frequency kita_cmp_rps "Compressor rotor speed [%.1f rps]" <pump> {channel="modbus:data:pdckita:analog:d18:number"}
+// Number:Frequency kita_rps_limit "Rps compressor limit [%.1f rps]" <pump> {channel="modbus:data:pdckita:analog:d33:number"}
+// Number:Frequency kita_rps_thermal_limit "Thermal rps compressor limit [%.1f rps]" <pump> {channel="modbus:data:pdckita:analog:d34:number"}
+
+Number:Temperature kita_chiller_set "Setpoint chiller mode (flash memory) [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d19:number"}
+Number:Temperature kita_plant_set "Setpoint heat pump mode (flash memory) [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d20:number"}
+Number:Temperature kita_acs_set "Setpoint sanitary water (flash memory) [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d21:number"}
+
+// Number kita_pid_prop "PID Final proportional band" {channel="modbus:data:pdckita:analog:d28:number"}
+// Number kita_pid_count "PID Count" {channel="modbus:data:pdckita:analog:d29:number"}
+
+Number:Temperature kita_avg_ext "Average external temperature [%.1f °C]"  {channel="modbus:data:pdckita:analog:d31:number"}
+Number:Temperature kita_opt_delta "Delta optimizer [%.1f °C]"  {channel="modbus:data:pdckita:analog:d32:number"}
+
+Number:Temperature kita_ram_chiller_set "Setpoint chiller mode temperature (ram memory) [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d65:number"}
+Number:Temperature kita_ram_plant_set "Setpoint heat pump temperature (ram memory) [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d66:number"}
+Number:Temperature kita_ram_acs_set "Setpoint sanitary temperature (ram memory) [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d67:number"}
+
+Number:Temperature kita_active_set "Setpoint Active [%.1f °C]" <heating> {channel="modbus:data:pdckita:analog:d68:number"}
+
+Number kita_vA_pct "Opening percentage valve A [%.1f %%]" {channel="modbus:data:pdckita:analog:d70:number"}
+
+Number kita_cop "Measure of COP [%.1f]" <qualityofservice> {channel="modbus:data:pdckita:analog:d76:number"}

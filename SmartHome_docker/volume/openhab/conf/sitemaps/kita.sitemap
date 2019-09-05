@@ -1,0 +1,44 @@
+sitemap kita label="KITA sitemap"
+{
+    Frame label="Performance" {        
+        Default item=kita_b8
+        Default item=kita_cop    
+
+        Default item=kita_therm_w_out
+        Default item=kita_total_w_in    
+
+        Default item=kita_defrosts
+    } 
+
+
+    Frame label="Compressor" {
+        Default item=kita_b10 
+        Default item=kita_b9 
+
+        Default item=kita_cmp_pct
+        Default item=kita_cmp_rps 
+    }   
+
+    Frame label="GAS" {
+        Default item=kita_b11c
+        Default item=kita_b12c
+       
+        Default item=kita_b1_calc                
+        Default item=kita_b1
+        
+        Default item=kita_vA_pct
+        Default item=kita_superheating      
+
+    }
+
+
+    Frame label="WATER" {        
+        Default item=kita_b4
+        Default item=kita_b7
+
+        Default item=kita_b5    
+        Default item=kita_b3
+    }
+
+ 
+}

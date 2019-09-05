@@ -1,0 +1,24 @@
+rule "calculate subcooling value"
+when
+    
+    Item kita_b1 changed
+
+then
+
+    try{
+
+        var Number b1 = ( kita_b11c.state as Number ) - (kita_b1.state as Number )
+        logDebug("calculate subcooling rule", "updating kita_b1_calc item value: %d", b1)
+        
+        if (b1 < 0) {
+            b1 = 0
+        } 
+
+        kita_b1_calc.postUpdate( b1 ) 
+    }
+    catch (Exception ex) {
+        logError("calculate subcooling rule", "ERRORE %s", ex.getMessage)
+    }
+  
+end
+

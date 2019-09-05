@@ -1,0 +1,18 @@
+Number kita_switch "Switch State [MAP(kita_switch.map):%s]" <switch> {channel="modbus:data:pdckita:integer:d221:number"}
+Number kita_mode "Operation Mode [MAP(kita_mode.map):%s]" <settings> {channel="modbus:data:pdckita:integer:d227:number"}
+
+Number kita_y3_pump_pwm "Y3 Analog Output: circulating pump PWM [%.1f %%]" <pump> {channel="modbus:data:pdckita:integer:d226:number"}
+
+Number kita_defrosts "Number of performed defrosts" <snow> {channel="modbus:data:pdckita:integer:d229:number"}
+
+Number:Power kita_fan_w_in "Current power for Ebmpapst fan [%.1f W]" <energy> {channel="modbus:data:pdckita:integer:d231:number"}
+Number:Power kita_total_w_in "Total power absorbed [%.1f W]" <energy> {channel="modbus:data:pdckita:integer:d234:number"}
+// Number:Power kita_el_w_in "Electrical input Power W [%.1f W]" <energy> {channel="modbus:data:pdckita:integer:d235:number"}
+Number:Power kita_therm_w_out "Thermical output Power KW [%.1f KW]" <energy> {channel="modbus:data:pdckita:integer:d236:number"}
+
+
+Number kita_cmp_pct "Actual compressor power percentage (in use) [%.1f %%]" <pump> {channel="modbus:data:pdckita:integer:d238:number"}
+Number kita_cmp_opt_pct "Optimizer pct delta [%.1f %%]" <pump> {channel="modbus:data:pdckita:integer:d239:number"}
+
+Number:Power kita_cmp_inst_pct "Istant compressor power percentage [%.1f %%]" <pump> {channel="modbus:data:pdckita:integer:d242:number"}
+Number:Power kita_cmp_avg_pct "Average compressor power percentage [%.1f %%]" <pump> {channel="modbus:data:pdckita:integer:d243:number"}

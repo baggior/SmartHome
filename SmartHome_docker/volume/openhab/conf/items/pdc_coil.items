@@ -1,0 +1,14 @@
+
+Switch kita_in_1 "Digital input 1: remote chiller/heat pump" {channel="modbus:data:pdckita:coil:d1:switch"}
+Switch kita_in_5 "Digital input 5: disable plant" {channel="modbus:data:pdckita:coil:d5:switch"}
+Switch kita_in_8 "Digital input 8: remote on/off" {channel="modbus:data:pdckita:coil:d8:switch"}
+Switch kita_in_10 "Digital input 10: primary flow switch" {channel="modbus:data:pdckita:coil:d10:switch"}
+
+Switch kita_cmp_on "Digital output 1: compressor working" {channel="modbus:data:pdckita:coil:d17:switch"}
+Switch kita_defrost_on "Digital output 2: defrost running" {channel="modbus:data:pdckita:coil:d18:switch"}
+Switch kita_general_alarm "Digital output 7: general alarm" {channel="modbus:data:pdckita:coil:d23:switch"}
+Switch kita_acs_valve "Digital output 9: sanitary hot water valve" {channel="modbus:data:pdckita:coil:d25:switch"}
+Switch kita_acs_valve "Digital output 10: 4 way valve" {channel="modbus:data:pdckita:coil:d26:switch"}
+
+Switch kita_flow_alarm "Flowswitch memory alarm" {channel="modbus:data:pdckita:coil:d34:switch"}
+

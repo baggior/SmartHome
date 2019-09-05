@@ -1,0 +1,8 @@
+Bridge modbus:tcp:pdckita "PDC Kita Modbus TCP Connection" [host="192.168.1.231", id=16, timeBetweenTransactionsMillis=500]
+{
+	Bridge poller analog "PDC Kita Modbus Poller Analog 1-89" [start=1, length=90, type="holding", refresh=30000, maxTries=1]
+
+	Bridge poller integer "PDC Kita Modbus Poller Integer 209-243" [start=209, length=35, type="holding", refresh=30000, maxTries=1]
+
+	Bridge poller coil "PDC Kita Modbus Poller Coils 1-78" [start=1, length=79, type="coil", refresh=300000, maxTries=1]
+}
